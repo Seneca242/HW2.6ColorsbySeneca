@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		0415B34826AC956200CD8DA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415B34726AC956200CD8DA0 /* AppDelegate.swift */; };
 		0415B34A26AC956200CD8DA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415B34926AC956200CD8DA0 /* SceneDelegate.swift */; };
-		0415B34C26AC956200CD8DA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415B34B26AC956200CD8DA0 /* ViewController.swift */; };
+		0415B34C26AC956200CD8DA0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415B34B26AC956200CD8DA0 /* MainViewController.swift */; };
 		0415B34F26AC956200CD8DA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0415B34D26AC956200CD8DA0 /* Main.storyboard */; };
 		0415B35126AC956600CD8DA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0415B35026AC956600CD8DA0 /* Assets.xcassets */; };
 		0415B35426AC956600CD8DA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0415B35226AC956600CD8DA0 /* LaunchScreen.storyboard */; };
+		0415B36026AC9D1C00CD8DA0 /* ColorSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415B35F26AC9D1C00CD8DA0 /* ColorSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0415B34426AC956200CD8DA0 /* HW2.6ColorsbySeneca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2.6ColorsbySeneca.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0415B34726AC956200CD8DA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0415B34926AC956200CD8DA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0415B34B26AC956200CD8DA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0415B34B26AC956200CD8DA0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0415B34E26AC956200CD8DA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0415B35026AC956600CD8DA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0415B35326AC956600CD8DA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0415B35526AC956600CD8DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0415B35F26AC9D1C00CD8DA0 /* ColorSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		0415B34626AC956200CD8DA0 /* HW2.6ColorsbySeneca */ = {
 			isa = PBXGroup;
 			children = (
-				0415B34726AC956200CD8DA0 /* AppDelegate.swift */,
-				0415B34926AC956200CD8DA0 /* SceneDelegate.swift */,
-				0415B34B26AC956200CD8DA0 /* ViewController.swift */,
-				0415B34D26AC956200CD8DA0 /* Main.storyboard */,
-				0415B35026AC956600CD8DA0 /* Assets.xcassets */,
-				0415B35226AC956600CD8DA0 /* LaunchScreen.storyboard */,
-				0415B35526AC956600CD8DA0 /* Info.plist */,
+				0415B35B26AC98BA00CD8DA0 /* ViewControllers */,
+				0415B35C26AC9B4600CD8DA0 /* Storyboards */,
+				0415B35D26AC9BB600CD8DA0 /* Support */,
+				0415B35E26AC9BD200CD8DA0 /* Resources */,
 			);
 			path = HW2.6ColorsbySeneca;
+			sourceTree = "<group>";
+		};
+		0415B35B26AC98BA00CD8DA0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0415B34B26AC956200CD8DA0 /* MainViewController.swift */,
+				0415B35F26AC9D1C00CD8DA0 /* ColorSettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0415B35C26AC9B4600CD8DA0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0415B34D26AC956200CD8DA0 /* Main.storyboard */,
+				0415B35226AC956600CD8DA0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0415B35D26AC9BB600CD8DA0 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0415B34926AC956200CD8DA0 /* SceneDelegate.swift */,
+				0415B34726AC956200CD8DA0 /* AppDelegate.swift */,
+				0415B35526AC956600CD8DA0 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		0415B35E26AC9BD200CD8DA0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0415B35026AC956600CD8DA0 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +172,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0415B34C26AC956200CD8DA0 /* ViewController.swift in Sources */,
+				0415B34C26AC956200CD8DA0 /* MainViewController.swift in Sources */,
+				0415B36026AC9D1C00CD8DA0 /* ColorSettingsViewController.swift in Sources */,
 				0415B34826AC956200CD8DA0 /* AppDelegate.swift in Sources */,
 				0415B34A26AC956200CD8DA0 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,7 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HW2.6ColorsbySeneca/Info.plist;
+				INFOPLIST_FILE = HW2.6ColorsbySeneca/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +341,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HW2.6ColorsbySeneca/Info.plist;
+				INFOPLIST_FILE = HW2.6ColorsbySeneca/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
